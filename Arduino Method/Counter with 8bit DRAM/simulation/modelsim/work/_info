@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Anjana/Desktop/Counter/simulation/modelsim
+Etb_counter
+Z1 w1673680861
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 dC:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim
+Z7 8C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/tb_counter.vhd
+Z8 FC:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/tb_counter.vhd
+l0
+L5
+VC8zJ^731RiEnHBCGIDd?o2
+!s100 8l0c`P@Yz7]>5i;Kz_EGU3
+Z9 OV;C;10.3c;59
+32
+Z10 !s110 1674016135
+!i10b 1
+Z11 !s108 1674016135.282000
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/tb_counter.vhd|
+Z13 !s107 C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/tb_counter.vhd|
+!i113 1
+Z14 o-work work
+Z15 tExplicit 1
+Atestbench1
+Z16 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 ]PeG<A<fLl[4lkbYF16fR3
+Z17 DPx10 cycloneive 21 cycloneive_components 0 22 3Lldj3nU[3c?WmiD[DfQk3
+Z18 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z19 DPx6 altera 11 dffeas_pack 0 22 H7KhBC387U^Q=<:@P;Bo21
+Z20 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z21 DPx6 altera 28 altera_primitives_components 0 22 <GB;XbRDX3XJJa<`aNII72
+Z22 DEx4 work 9 top_level 0 22 GDUE^U<Cg:BT=h[Qgz3_?3
+R2
+R3
+R4
+R5
+Z23 DEx4 work 10 tb_counter 0 22 C8zJ^731RiEnHBCGIDd?o2
+l20
+L8
+Z24 VF7ZG]cRmX`Uo=D^0hD4ZK2
+Z25 !s100 ^ULG4gFK`^K0_BIJVk4@z0
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Etop_level
+Z26 w1674015872
+R16
+R17
+R18
+R19
+R20
+R4
+R5
+R21
+R6
+Z27 8C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/Counter_8bit.vho
+Z28 FC:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/Counter_8bit.vho
+l0
+L37
+VGDUE^U<Cg:BT=h[Qgz3_?3
+!s100 f^FEC^fDQ4UF2l]]AO?C=1
+R9
+32
+Z29 !s110 1674016130
+!i10b 1
+Z30 !s108 1674016130.612000
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/Counter_8bit.vho|
+Z32 !s107 C:/Users/Anjana/Desktop/Counter with 8bit DRAM/simulation/modelsim/Counter_8bit.vho|
+!i113 1
+R14
+R15
+Astructure
+R16
+R17
+R18
+R19
+R20
+R4
+R5
+R21
+R22
+l706
+L112
+VYDBa7GQCAVNLa=Re<Y^MI1
+!s100 ]B0JRWG>UaLlS6RD6G@gm3
+R9
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R14
+R15
