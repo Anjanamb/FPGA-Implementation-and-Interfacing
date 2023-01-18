@@ -1,2 +1,2 @@
 # FPGA Implementation and intafercing
- FOr the purpose
+ For the purpose of interfacing purposes this task is carried out. 
