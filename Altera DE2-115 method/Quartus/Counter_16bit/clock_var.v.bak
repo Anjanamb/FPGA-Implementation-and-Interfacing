@@ -1,0 +1,16 @@
+module clock_var (
+    input clk_50mhz,
+    output reg clk_0_4hz
+);
+
+reg [27:0] counter = 0; // Increase counter size to accommodate lower frequency
+
+always @(posedge clk_50mhz) begin
+    counter <= counter + 1;
+    if (counter == 125000000) begin // Change counter limit for desired frequency
+        counter <= 0;
+        clk_0_4hz <= ~clk_0_4hz;
+    end
+end
+
+endmodule

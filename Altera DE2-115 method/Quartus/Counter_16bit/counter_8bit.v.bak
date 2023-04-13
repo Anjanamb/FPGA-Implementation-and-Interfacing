@@ -1,0 +1,34 @@
+module counter_8bit (
+    input clock,
+    input reset,
+    input wrreq,
+    output reg [7:0] count
+);
+
+// Internal wires
+wire full;
+wire [7:0] q;
+wire [7:0] usedw;
+
+// Instantiate FIFO module
+FIFO fifo_inst (
+    .clock(clock),
+    .data(count),
+    .rdreq(),
+    .wrreq(wrreq),
+    .empty(),
+    .full(full),
+    .q(q),
+    .usedw(usedw)
+);
+
+// Counter logic
+always @(posedge clock) begin
+    if (reset) begin
+        count <= 8'b0;
+    end else begin
+        count <= count + 1;
+    end
+end
+
+endmodule
