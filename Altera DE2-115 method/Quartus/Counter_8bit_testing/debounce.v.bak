@@ -1,0 +1,70 @@
+module debounce
+#(
+  parameter integer counter_size = 19
+)
+(
+  output reg [6:0] Digit,
+  output reg [3:0] hex_count,
+  input clk,
+  input reset,
+  input button,
+  output reg Digit_en
+);
+
+  reg [3:0] counter = 4'b0000;
+  reg [1:0] flipflops;
+  reg [counter_size:0] counter_out = {counter_size{1'b0}};
+  wire counter_set = flipflops[0] ^ flipflops[1];
+  reg result;
+
+  always @(posedge clk) begin
+    flipflops[0] <= button;
+    flipflops[1] <= flipflops[0];
+    if (counter_set == 1'b1) begin
+      counter_out <= {counter_size{1'b0}};
+    end
+    else if (counter_out[counter_size] == 1'b0) begin
+      counter_out <= counter_out + 1;
+    end
+    else begin
+      result <= ~flipflops[1];
+    end
+  end
+
+  always @(posedge clk) begin
+    if (reset == 1'b0) begin
+      counter <= 4'b0000;
+    end
+    else if (result) begin
+      if (counter == 4'b1111) begin
+        counter <= 4'b0000;
+      end
+      else begin
+        counter <= counter + 1;
+      end
+    end
+    case (counter)
+      4'b0000: Digit <= 7'b1000000;
+      4'b0001: Digit <= 7'b1111001;
+      4'b0010: Digit <= 7'b0100100;
+      4'b0011: Digit <= 7'b0110000;
+      4'b0100: Digit <= 7'b0011001;
+      4'b0101: Digit <= 7'b0010010;
+      4'b0110: Digit <= 7'b0000010;
+      4'b0111: Digit <= 7'b1111000;
+      4'b1000: Digit <= 7'b0000000;
+      4'b1001: Digit <= 7'b0010000;
+      4'b1010: Digit <= 7'b0001000;
+      4'b1011: Digit <= 7'b0000011;
+      4'b1100: Digit <= 7'b1000110;
+      4'b1101: Digit <= 7'b0100001;
+      4'b1110: Digit <= 7'b0000110;
+      4'b1111: Digit <= 7'b0001110;
+      default: Digit <= 7'b1111111;
+    endcase
+  end
+
+  assign Digit_en = 1'b0;
+  assign hex_count = counter;
+
+endmodule
