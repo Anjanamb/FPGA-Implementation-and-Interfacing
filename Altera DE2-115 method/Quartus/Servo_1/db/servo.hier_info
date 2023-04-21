@@ -1,0 +1,64 @@
+|servo
+mclk => mclk.IN1
+toggle => toggle.IN1
+Led1[0] << motor:motor.Led
+pwm << motor:motor.servo
+
+
+|servo|motor:motor
+mclk => control[2].CLK
+mclk => control[3].CLK
+mclk => control[4].CLK
+mclk => control[5].CLK
+mclk => control[6].CLK
+mclk => control[7].CLK
+mclk => control[8].CLK
+mclk => control[9].CLK
+mclk => control[10].CLK
+mclk => control[11].CLK
+mclk => control[12].CLK
+mclk => control[13].CLK
+mclk => control[14].CLK
+mclk => control[15].CLK
+mclk => control[16].CLK
+mclk => servo_reg.CLK
+mclk => counter[0].CLK
+mclk => counter[1].CLK
+mclk => counter[2].CLK
+mclk => counter[3].CLK
+mclk => counter[4].CLK
+mclk => counter[5].CLK
+mclk => counter[6].CLK
+mclk => counter[7].CLK
+mclk => counter[8].CLK
+mclk => counter[9].CLK
+mclk => counter[10].CLK
+mclk => counter[11].CLK
+mclk => counter[12].CLK
+mclk => counter[13].CLK
+mclk => counter[14].CLK
+mclk => counter[15].CLK
+mclk => counter[16].CLK
+mclk => counter[17].CLK
+mclk => counter[18].CLK
+mclk => counter[19].CLK
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => control.OUTPUTSELECT
+toggle => Led[0].DATAIN
+Led[0] <= toggle.DB_MAX_OUTPUT_PORT_TYPE
+servo <= servo_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
