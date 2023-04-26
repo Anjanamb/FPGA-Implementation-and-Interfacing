@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at servo.v(19): object "Clk_200hz" differs only in case from object "clk_200hz" in the same scope

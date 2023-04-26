@@ -56,8 +56,32 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_G8 -to Led1[0]
 set_location_assignment PIN_Y2 -to mclk
 set_location_assignment PIN_AB22 -to pwm
 set_location_assignment PIN_AB28 -to toggle
+set_global_assignment -name VERILOG_FILE clock_100hz.v
+set_global_assignment -name VERILOG_FILE clock_var.v
+set_global_assignment -name QIP_FILE FIFO.qip
+set_global_assignment -name VERILOG_FILE transmitter.v
+set_global_assignment -name VERILOG_FILE baudrate.v
+set_location_assignment PIN_F17 -to servo[0]
+set_location_assignment PIN_AA22 -to Wr_en
+set_location_assignment PIN_Y23 -to Wrreq
+set_location_assignment PIN_Y24 -to Rdreq
+set_location_assignment PIN_G9 -to Tx
+set_location_assignment PIN_E21 -to Fifo_empty
+set_location_assignment PIN_E22 -to Fifo_full
+set_location_assignment PIN_F18 -to Data_out[4]
+set_location_assignment PIN_F21 -to Data_out[3]
+set_location_assignment PIN_E19 -to Data_out[2]
+set_location_assignment PIN_F19 -to Data_out[1]
+set_location_assignment PIN_G19 -to Data_out[0]
+set_location_assignment PIN_J19 -to Data_out[8]
+set_location_assignment PIN_H19 -to Data_out[9]
+set_location_assignment PIN_J17 -to Data_out[10]
+set_location_assignment PIN_G17 -to Data_out[11]
+set_location_assignment PIN_J15 -to Data_out[12]
+set_location_assignment PIN_E18 -to Data_out[5]
+set_location_assignment PIN_H16 -to Data_out[13]
+set_global_assignment -name VERILOG_FILE clock_200hz.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

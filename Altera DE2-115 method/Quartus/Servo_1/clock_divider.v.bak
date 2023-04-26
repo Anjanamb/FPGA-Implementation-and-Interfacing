@@ -1,0 +1,16 @@
+module clock_divider (
+  input clk_in,  // input clock
+  output reg clk_out  // output clock
+);
+
+reg [15:0] counter = 0;  // counter for dividing the clock
+
+always @(posedge clk_in) begin
+  counter <= counter + 1;
+  if (counter == 20000) begin
+    counter <= 0;
+    clk_out <= ~clk_out;  // toggle the output clock
+  end
+end
+
+endmodule
