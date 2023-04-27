@@ -58,28 +58,28 @@ begin
 			if(toggle == 0)
 					if(control == 0) 
 						begin
-							control <= control;
-							data_reg <= data_reg;
-							data_out <= {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
+							control = control;
+							data_reg = data_reg;
+							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
 						end
 					else
 						begin
-							control <= control - 10;
-							data_reg <= data_reg - 1;
-							data_out <= {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
+							control = control - 10;
+							data_reg = data_reg - 1;
+							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
 						end
 			if(toggle == 1)
 					if(control == 'd2200) 
 						begin
-							control <= control;
-							data_reg <= data_reg;
-							data_out <= {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
+							control = control;
+							data_reg = data_reg;
+							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
 						end
 					else
 						begin
-							control <= control + 10;
-							data_reg <= data_reg + 1;
-							data_out <= {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
+							control = control + 10;
+							data_reg = data_reg + 1;
+							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
 						end
 		end
 ////////////////////////////////////////////////////////////

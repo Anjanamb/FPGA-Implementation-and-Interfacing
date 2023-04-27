@@ -58,7 +58,7 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_Y2 -to mclk
 set_location_assignment PIN_AB22 -to pwm
-set_location_assignment PIN_AB28 -to toggle
+set_location_assignment PIN_M23 -to toggle
 set_global_assignment -name VERILOG_FILE clock_100hz.v
 set_global_assignment -name VERILOG_FILE clock_var.v
 set_global_assignment -name QIP_FILE FIFO.qip

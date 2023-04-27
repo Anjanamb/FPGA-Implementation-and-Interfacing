@@ -24,9 +24,9 @@ with open('received_data.txt', 'w') as f:
             # Last 6 bits of the binary_data
             last_6bits = binary_data[2:]
 
-            # If first_3bits is not equal to prev_value_first_3bits, do the following
+            # If first_2bits is not equal to prev_value_first_2bits, do the following
             if first_2bits != prev_value_first_2bits:
-                # Circuit data is the last 5 bits of the binary_data concatanate for 2 steps starting from first_3bits = 000 to first_3bits = 001
+                # Circuit data is the last 6 bits of the binary_data concatanate for 2 steps starting from first_2bits = 00 to first_2bits = 01
                 if first_2bits == '00':
                     circuit_data = last_6bits
                 elif first_2bits == '01':
