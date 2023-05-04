@@ -1,6 +1,7 @@
 module servo(
     input mclk,
     input toggle,
+	 input freeze,
 	 input wire Rdreq,
 	 input wire Wrreq,
 	 input wire Wr_en,
@@ -35,6 +36,7 @@ clk_200hz clk_200hz ( .clk_50mhz(mclk),
 								  
 motor motor( .mclk(Clk_1mhz),
 				 .toggle(toggle),
+				 .freeze(freeze),
 				 .Led(servo),
 				 .servo(pwm),
 				 .data_out(cir_in)

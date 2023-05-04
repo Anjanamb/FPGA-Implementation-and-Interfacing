@@ -1,5 +1,5 @@
 Analysis & Synthesis report for servo
-Wed Apr 26 22:59:22 2023
+Thu May 04 23:26:19 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -62,16 +62,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 26 22:59:22 2023      ;
+; Analysis & Synthesis Status        ; Successful - Thu May 04 23:26:19 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; servo                                      ;
 ; Top-level Entity Name              ; servo                                      ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 410                                        ;
-;     Total combinational functions  ; 337                                        ;
-;     Dedicated logic registers      ; 218                                        ;
-; Total registers                    ; 218                                        ;
-; Total pins                         ; 27                                         ;
+; Total logic elements               ; 409                                        ;
+;     Total combinational functions  ; 335                                        ;
+;     Dedicated logic registers      ; 219                                        ;
+; Total registers                    ; 219                                        ;
+; Total pins                         ; 28                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 4,096                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -175,12 +175,11 @@ agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -216,23 +215,23 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 410        ;
+; Estimated Total logic elements              ; 409        ;
 ;                                             ;            ;
-; Total combinational functions               ; 337        ;
+; Total combinational functions               ; 335        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 123        ;
-;     -- 3 input functions                    ; 49         ;
-;     -- <=2 input functions                  ; 165        ;
+;     -- 4 input functions                    ; 122        ;
+;     -- 3 input functions                    ; 50         ;
+;     -- <=2 input functions                  ; 163        ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 208        ;
+;     -- normal mode                          ; 206        ;
 ;     -- arithmetic mode                      ; 129        ;
 ;                                             ;            ;
-; Total registers                             ; 218        ;
-;     -- Dedicated logic registers            ; 218        ;
+; Total registers                             ; 219        ;
+;     -- Dedicated logic registers            ; 219        ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 27         ;
+; I/O pins                                    ; 28         ;
 ; Total memory bits                           ; 4096       ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
@@ -249,12 +248,12 @@ agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |servo                                                    ; 337 (1)           ; 218 (0)      ; 4096        ; 0            ; 0       ; 0         ; 27   ; 0            ; |servo                                                                                                                                         ;              ;
+; |servo                                                    ; 335 (1)           ; 219 (0)      ; 4096        ; 0            ; 0       ; 0         ; 28   ; 0            ; |servo                                                                                                                                         ;              ;
 ;    |FIFO:FIFO|                                            ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_eeg1:auto_generated|                     ; 57 (6)            ; 90 (27)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated                                                  ; work         ;
-;             |a_graycounter_n5c:wrptr_g1p|                 ; 17 (17)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p                      ; work         ;
-;             |a_graycounter_qn6:rdptr_g1p|                 ; 17 (17)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_qn6:rdptr_g1p                      ; work         ;
+;             |a_graycounter_n5c:wrptr_g1p|                 ; 18 (18)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p                      ; work         ;
+;             |a_graycounter_qn6:rdptr_g1p|                 ; 16 (16)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_qn6:rdptr_g1p                      ; work         ;
 ;             |alt_synch_pipe_36d:rs_dgwp|                  ; 0 (0)             ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|alt_synch_pipe_36d:rs_dgwp                       ; work         ;
 ;                |dffpipe_2v8:dffpipe12|                    ; 0 (0)             ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|alt_synch_pipe_36d:rs_dgwp|dffpipe_2v8:dffpipe12 ; work         ;
 ;             |alt_synch_pipe_46d:ws_dgrp|                  ; 0 (0)             ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|alt_synch_pipe_46d:ws_dgrp                       ; work         ;
@@ -267,8 +266,8 @@ agreement for further details.
 ;    |clk_200hz:clk_200hz|                                  ; 43 (43)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clk_200hz:clk_200hz                                                                                                                     ; work         ;
 ;    |clock_100hz:clock_100hz|                              ; 41 (41)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_100hz:clock_100hz                                                                                                                 ; work         ;
 ;    |clock_var:clock_var|                                  ; 11 (11)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_var:clock_var                                                                                                                     ; work         ;
-;    |motor:motor|                                          ; 143 (143)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor:motor                                                                                                                             ; work         ;
-;    |transmitter:uart_Tx|                                  ; 22 (22)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|transmitter:uart_Tx                                                                                                                     ; work         ;
+;    |motor:motor|                                          ; 142 (142)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor:motor                                                                                                                             ; work         ;
+;    |transmitter:uart_Tx|                                  ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|transmitter:uart_Tx                                                                                                                     ; work         ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -311,12 +310,12 @@ Encoding Type:  One-Hot
 +----------------------------------------+--------------------------------------------+
 ; motor:motor|data_out[15]               ; Stuck at GND due to stuck port data_in     ;
 ; motor:motor|data_out[14]               ; Stuck at VCC due to stuck port data_in     ;
-; motor:motor|data_out[6,7,11..13]       ; Stuck at GND due to stuck port data_in     ;
+; motor:motor|data_out[6,7,12,13]        ; Stuck at GND due to stuck port data_in     ;
 ; transmitter:uart_Tx|state~5            ; Lost fanout                                ;
 ; transmitter:uart_Tx|state~6            ; Lost fanout                                ;
 ; clock_100hz:clock_100hz|counter[0]     ; Merged with clk_200hz:clk_200hz|counter[0] ;
 ; clock_100hz:clock_100hz|counter[1]     ; Merged with clk_200hz:clk_200hz|counter[1] ;
-; Total Number of Removed Registers = 11 ;                                            ;
+; Total Number of Removed Registers = 10 ;                                            ;
 +----------------------------------------+--------------------------------------------+
 
 
@@ -325,12 +324,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 218   ;
+; Total registers                              ; 219   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 27    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 65    ;
+; Number of registers using Clock Enable       ; 66    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -341,9 +340,9 @@ Encoding Type:  One-Hot
 ; Inverted Register                                                                                                                ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------+---------+
 ; transmitter:uart_Tx|Tx                                                                                                           ; 2       ;
-; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|counter8a0    ; 7       ;
+; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|counter8a0    ; 8       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|cntr_old:cntr_b|counter_reg_bit0          ; 2       ;
-; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|parity9       ; 5       ;
+; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|parity9       ; 6       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_qn6:rdptr_g1p|sub_parity6a0 ; 1       ;
 ; Total number of inverted registers = 5                                                                                           ;         ;
 +----------------------------------------------------------------------------------------------------------------------------------+---------+
@@ -355,7 +354,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |servo|motor:motor|control[8]         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |servo|motor:motor|data_out[2]        ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |servo|motor:motor|data_out[3]        ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |servo|transmitter:uart_Tx|bit_pos[1] ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |servo|transmitter:uart_Tx|Selector3  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |servo|transmitter:uart_Tx|Selector2  ;
@@ -511,25 +510,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 27                          ;
-; cycloneiii_ff         ; 218                         ;
-;     ENA               ; 38                          ;
+; boundary_port         ; 28                          ;
+; cycloneiii_ff         ; 219                         ;
+;     ENA               ; 39                          ;
 ;     ENA SLD           ; 27                          ;
 ;     plain             ; 153                         ;
-; cycloneiii_lcell_comb ; 341                         ;
+; cycloneiii_lcell_comb ; 339                         ;
 ;     arith             ; 129                         ;
 ;         2 data inputs ; 116                         ;
 ;         3 data inputs ; 13                          ;
-;     normal            ; 212                         ;
+;     normal            ; 210                         ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 15                          ;
-;         2 data inputs ; 34                          ;
-;         3 data inputs ; 36                          ;
-;         4 data inputs ; 123                         ;
+;         2 data inputs ; 32                          ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 122                         ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.51                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -548,10 +547,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Wed Apr 26 22:59:10 2023
+    Info: Processing started: Thu May 04 23:26:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off servo -c servo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Warning (10275): Verilog HDL Module Instantiation warning at servo.v(63): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at servo.v(65): ignored dangling comma in List of Port Connections
 Info (12021): Found 1 design units, including 1 entities, in source file servo.v
     Info (12023): Found entity 1: servo
 Info (12021): Found 1 design units, including 1 entities, in source file motor.v
@@ -576,11 +575,11 @@ Warning (10230): Verilog HDL assignment warning at clock_var.v(14): truncated va
 Info (12128): Elaborating entity "clk_200hz" for hierarchy "clk_200hz:clk_200hz"
 Warning (10230): Verilog HDL assignment warning at clock_200hz.v(14): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "motor" for hierarchy "motor:motor"
-Warning (10230): Verilog HDL assignment warning at motor.v(41): truncated value with size 32 to match size of target (15)
-Warning (10230): Verilog HDL assignment warning at motor.v(67): truncated value with size 32 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at motor.v(68): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at motor.v(80): truncated value with size 32 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at motor.v(81): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at motor.v(42): truncated value with size 32 to match size of target (15)
+Warning (10230): Verilog HDL assignment warning at motor.v(71): truncated value with size 32 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at motor.v(72): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at motor.v(87): truncated value with size 32 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at motor.v(88): truncated value with size 32 to match size of target (8)
 Info (12128): Elaborating entity "baudrate" for hierarchy "baudrate:uart_baud"
 Info (12128): Elaborating entity "transmitter" for hierarchy "transmitter:uart_Tx"
 Info (12128): Elaborating entity "FIFO" for hierarchy "FIFO:FIFO"
@@ -633,7 +632,6 @@ Info (12128): Elaborating entity "cntr_old" for hierarchy "FIFO:FIFO|dcfifo_mixe
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Data_out[6]" is stuck at GND
     Warning (13410): Pin "Data_out[7]" is stuck at GND
-    Warning (13410): Pin "Data_out[11]" is stuck at GND
     Warning (13410): Pin "Data_out[12]" is stuck at GND
     Warning (13410): Pin "Data_out[13]" is stuck at GND
     Warning (13410): Pin "Data_out[14]" is stuck at VCC
@@ -644,15 +642,15 @@ Info (144001): Generated suppressed messages file C:/Users/Anjana/Desktop/Github
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 453 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 22 output pins
-    Info (21061): Implemented 418 logic cells
+    Info (21061): Implemented 417 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Wed Apr 26 22:59:22 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:27
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Thu May 04 23:26:19 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+

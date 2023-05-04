@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at servo.v(19): object "Clk_200hz" differs only in case from object "clk_200hz" in the same scope
-Warning (10268): Verilog HDL information at motor.v(37): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at servo.v(20): object "Clk_200hz" differs only in case from object "clk_200hz" in the same scope
+Warning (10268): Verilog HDL information at motor.v(38): always construct contains both blocking and non-blocking assignments

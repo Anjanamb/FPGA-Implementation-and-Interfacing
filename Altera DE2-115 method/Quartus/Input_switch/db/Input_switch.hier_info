@@ -1,0 +1,6 @@
+|Input_switch
+clk => gpio~reg0.CLK
+switch => gpio~reg0.DATAIN
+gpio << gpio~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,6 +1,7 @@
 module motor(
     input mclk,
     input toggle,  //Use this as the control input
+	 input freeze,  //Use this as the freeze input
 	 output [0:0] Led,
     output servo,
 	 output reg [15:0] data_out
@@ -56,30 +57,36 @@ begin
 	if(counter == 0)
 		begin
 			if(toggle == 0)
-					if(control == 0) 
+					if(control == 0 || freeze == 1) 
 						begin
 							control = control;
 							data_reg = data_reg;
-							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
+							if(freeze == 0)
+								data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b0, 1'b0};
+							else
+								data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b0, 1'b1};
 						end
 					else
 						begin
 							control = control - 10;
 							data_reg = data_reg - 1;
-							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b0};
+							data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b0, 1'b0};
 						end
 			if(toggle == 1)
-					if(control == 'd2200) 
+					if(control == 'd2200 || freeze == 1) 
 						begin
 							control = control;
 							data_reg = data_reg;
-							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
+							if(freeze == 0)
+								data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b1, 1'b0};
+							else
+								data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b1, 1'b1};
 						end
 					else
 						begin
 							control = control + 10;
 							data_reg = data_reg + 1;
-							data_out = {2'b01, 3'b000, data_reg[7:5], 2'b00, data_reg[4:0], 1'b1};
+							data_out = {2'b01, 2'b00, data_reg[7:4], 2'b00, data_reg[3:0], 1'b1, 1'b0};
 						end
 		end
 ////////////////////////////////////////////////////////////

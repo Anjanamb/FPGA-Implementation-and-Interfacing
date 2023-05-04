@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Input_switch/Input_switch.v
+source_file = 1, C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Input_switch/db/Input_switch.cbx.xml
+design_name = Input_switch
+instance = comp, \gpio~output\, gpio~output, Input_switch, 1
+instance = comp, \clk~input\, clk~input, Input_switch, 1
+instance = comp, \switch~input\, switch~input, Input_switch, 1
+instance = comp, \gpio~reg0\, gpio~reg0, Input_switch, 1
