@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim
+vservo
+!s110 1684906733
+!i10b 1
+!s100 ?AohO=Kk:VLI<mGX:FZC=0
+Iia[Y:Ddco642?`jh]a5QP0
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1684848319
+8C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo.vo
+FC:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo.vo
+L0 32
+Z2 OV;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1684906733.575000
+!s107 C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo.vo|
+!s90 -reportprogress|300|-work|work|C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo.vo|
+!i113 1
+Z3 o-work work
+vservo_tb
+!s110 1684906735
+!i10b 1
+!s100 j>Mj8^5i1Voo@CDRn<odT3
+IbdM7e1z]Z[WeQNmOAUV?T0
+R1
+R0
+w1684845326
+8C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo_tb.v
+FC:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1684906735.007000
+!s107 C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo_tb.v|
+!s90 -reportprogress|30|-work|work|C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/simulation/modelsim/servo_tb.v|
+!i113 1
+R3

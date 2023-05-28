@@ -1,5 +1,5 @@
 Analysis & Synthesis report for servo
-Thu May 04 23:26:19 2023
+Sun May 28 19:25:01 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 04 23:26:19 2023      ;
+; Analysis & Synthesis Status        ; Successful - Sun May 28 19:25:01 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; servo                                      ;
 ; Top-level Entity Name              ; servo                                      ;
@@ -196,6 +196,7 @@ agreement for further details.
 ; transmitter.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/transmitter.v             ;         ;
 ; baudrate.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/baudrate.v                ;         ;
 ; clock_200hz.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/clock_200hz.v             ;         ;
+; pwm.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/pwm.v                     ;         ;
 ; dcfifo_mixed_widths.tdf          ; yes             ; Megafunction                 ; c:/altera/14.1/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf                                                                  ;         ;
 ; db/dcfifo_eeg1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/db/dcfifo_eeg1.tdf        ;         ;
 ; db/a_graycounter_qn6.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_1/db/a_graycounter_qn6.tdf  ;         ;
@@ -248,7 +249,7 @@ agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |servo                                                    ; 335 (1)           ; 219 (0)      ; 4096        ; 0            ; 0       ; 0         ; 28   ; 0            ; |servo                                                                                                                                         ;              ;
+; |servo                                                    ; 335 (1)           ; 219 (0)      ; 4096        ; 0            ; 0       ; 0         ; 28   ; 0            ; |servo                                                                                                                                         ; work         ;
 ;    |FIFO:FIFO|                                            ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_eeg1:auto_generated|                     ; 57 (6)            ; 90 (27)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated                                                  ; work         ;
@@ -266,7 +267,8 @@ agreement for further details.
 ;    |clk_200hz:clk_200hz|                                  ; 43 (43)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clk_200hz:clk_200hz                                                                                                                     ; work         ;
 ;    |clock_100hz:clock_100hz|                              ; 41 (41)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_100hz:clock_100hz                                                                                                                 ; work         ;
 ;    |clock_var:clock_var|                                  ; 11 (11)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_var:clock_var                                                                                                                     ; work         ;
-;    |motor:motor|                                          ; 142 (142)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor:motor                                                                                                                             ; work         ;
+;    |motor:motor|                                          ; 121 (121)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor:motor                                                                                                                             ; work         ;
+;    |pwm:pwm|                                              ; 21 (21)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|pwm:pwm                                                                                                                                 ; work         ;
 ;    |transmitter:uart_Tx|                                  ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|transmitter:uart_Tx                                                                                                                     ; work         ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -547,10 +549,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Thu May 04 23:26:06 2023
+    Info: Processing started: Sun May 28 19:24:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off servo -c servo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Warning (10275): Verilog HDL Module Instantiation warning at servo.v(65): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at servo.v(74): ignored dangling comma in List of Port Connections
 Info (12021): Found 1 design units, including 1 entities, in source file servo.v
     Info (12023): Found entity 1: servo
 Info (12021): Found 1 design units, including 1 entities, in source file motor.v
@@ -567,6 +569,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file baudrat
     Info (12023): Found entity 1: baudrate
 Info (12021): Found 1 design units, including 1 entities, in source file clock_200hz.v
     Info (12023): Found entity 1: clk_200hz
+Info (12021): Found 1 design units, including 1 entities, in source file pwm.v
+    Info (12023): Found entity 1: pwm
 Info (12127): Elaborating entity "servo" for the top level hierarchy
 Info (12128): Elaborating entity "clock_100hz" for hierarchy "clock_100hz:clock_100hz"
 Warning (10230): Verilog HDL assignment warning at clock_100hz.v(14): truncated value with size 32 to match size of target (26)
@@ -575,11 +579,12 @@ Warning (10230): Verilog HDL assignment warning at clock_var.v(14): truncated va
 Info (12128): Elaborating entity "clk_200hz" for hierarchy "clk_200hz:clk_200hz"
 Warning (10230): Verilog HDL assignment warning at clock_200hz.v(14): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "motor" for hierarchy "motor:motor"
-Warning (10230): Verilog HDL assignment warning at motor.v(42): truncated value with size 32 to match size of target (15)
-Warning (10230): Verilog HDL assignment warning at motor.v(71): truncated value with size 32 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at motor.v(72): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at motor.v(87): truncated value with size 32 to match size of target (12)
-Warning (10230): Verilog HDL assignment warning at motor.v(88): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at motor.v(39): truncated value with size 32 to match size of target (15)
+Warning (10230): Verilog HDL assignment warning at motor.v(63): truncated value with size 32 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at motor.v(64): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at motor.v(79): truncated value with size 32 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at motor.v(80): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "pwm" for hierarchy "pwm:pwm"
 Info (12128): Elaborating entity "baudrate" for hierarchy "baudrate:uart_baud"
 Info (12128): Elaborating entity "transmitter" for hierarchy "transmitter:uart_Tx"
 Info (12128): Elaborating entity "FIFO" for hierarchy "FIFO:FIFO"
@@ -647,10 +652,10 @@ Info (21057): Implemented 453 device resources after synthesis - the final resou
     Info (21061): Implemented 417 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4797 megabytes
-    Info: Processing ended: Thu May 04 23:26:19 2023
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Sun May 28 19:25:01 2023
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

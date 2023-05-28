@@ -5,8 +5,8 @@ module servo(
 	 input wire Rdreq,
 	 input wire Wrreq,
 	 input wire Wr_en,
-    output [0:0] servo,
-    output pwm,
+    output [0:0] servo_dir,
+    output PWM,
 	 output wire [15:0] Data_out,
 	 output wire Fifo_empty,
 	 output wire Fifo_full,
@@ -20,6 +20,8 @@ wire Clk_1mhz;
 wire Clk_200hz;
 wire [15:0] cir_in; //circuit data
 wire [7:0] Tx_data;
+wire [11:0] control;
+wire [14:0] counter;
 assign Data_out = cir_in;
 
 clock_100hz clock_100hz ( .clk_50mhz(mclk),
@@ -37,11 +39,18 @@ clk_200hz clk_200hz ( .clk_50mhz(mclk),
 motor motor( .mclk(Clk_1mhz),
 				 .toggle(toggle),
 				 .freeze(freeze),
-				 .Led(servo),
-				 .servo(pwm),
-				 .data_out(cir_in)
+				 .Led(servo_dir),
+				 .data_out(cir_in),
+				 .control(control),
+				 .counter(counter)
 				 );
 
+pwm pwm(  .mclk(Clk_1mhz),
+			 .servo(PWM),
+			 .control(control),
+			 .counter(counter)
+			);
+				 
 baudrate uart_baud(	.clk_50m(mclk),
 							.Txclk_en(Txclk_en)
 							);

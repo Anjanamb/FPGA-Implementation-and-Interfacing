@@ -3,8 +3,9 @@ module motor(
     input toggle,  //Use this as the control input
 	 input freeze,  //Use this as the freeze input
 	 output [0:0] Led,
-    output servo,
-	 output reg [15:0] data_out
+	 output reg [15:0] data_out,
+	 output reg [11:0] control,
+	 output reg [14:0] counter
     );
 
 //50 MHz clock onBoard
@@ -23,17 +24,13 @@ module motor(
 //Resolution (180 degrees)/1,000 	= 0.18 degrees
 
 //essential registers
-reg [14:0] counter;
-reg        servo_reg;
 reg [7:0] data_reg	=	0; //255
-
+initial begin
+    control = 0; // Assign an initial value to control
+end
 ////////////////////////////////////////////////////////////
 //Test Control registers ///////////////////////////////////
 ////////////////////////////////////////////////////////////
-reg [11:0] control	=	0; //4095 there is wiggle room but you should be careful to not overcontrol
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-
 
 always @(posedge mclk)
 begin
@@ -43,13 +40,8 @@ begin
 	if(counter == 'd19999)
 			counter <= 0;
 
-	if(counter < ('d400 + control))
-			servo_reg <= 1;
-	else
-			servo_reg <= 0;
-
 ////////////////////////////////////////////////////////////
-//Test control algorithm////////////////////////////////////
+//control algorithm////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
 
@@ -95,6 +87,6 @@ begin
 end
 
 assign Led[0]	= toggle;
-assign servo	= servo_reg;
+//assign control	= control;
 
 endmodule
