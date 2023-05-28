@@ -1,0 +1,9 @@
+Info (10281): Verilog HDL Declaration information at servo.v(32): object "Clk_200hz" differs only in case from object "clk_200hz" in the same scope
+Info (10281): Verilog HDL Declaration information at servo.v(18): object "PWM1" differs only in case from object "pwm1" in the same scope
+Info (10281): Verilog HDL Declaration information at servo.v(19): object "PWM2" differs only in case from object "pwm2" in the same scope
+Info (10281): Verilog HDL Declaration information at servo.v(20): object "PWM3" differs only in case from object "pwm3" in the same scope
+Info (10281): Verilog HDL Declaration information at servo.v(21): object "PWM4" differs only in case from object "pwm4" in the same scope
+Warning (10268): Verilog HDL information at motor1.v(35): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at motor2.v(36): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at motor3.v(36): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at motor4.v(36): always construct contains both blocking and non-blocking assignments

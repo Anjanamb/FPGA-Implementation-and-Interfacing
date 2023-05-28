@@ -1,0 +1,43 @@
+module pwm(
+    input mclk,
+    input toggle,  //Use this as the control input
+	 input freeze,  //Use this as the freeze input
+	 output [0:0] Led,
+    output servo,
+	 output reg [15:0] data_out
+    );
+
+
+//essential registers
+reg [14:0] counter;
+reg        servo_reg;
+reg [7:0] data_reg	=	0; //255
+
+
+reg [11:0] control	=	0; //4095 there is wiggle room but you should be careful to not overcontrol
+
+
+
+
+
+
+
+
+always @(posedge mclk)
+begin
+
+//Servo algorithm
+counter <= counter + 1;
+	if(counter == 'd19999)
+			counter <= 0;
+
+	if(counter < ('d400 + control))
+			servo_reg <= 1;
+	else
+			servo_reg <= 0;
+			
+end
+			
+			
+			
+assign servo	= servo_reg;
