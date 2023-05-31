@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for servo
-Sun May 28 19:25:35 2023
+Wed May 31 01:33:44 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -437,8 +437,8 @@ No paths to report.
 ; -2.660 ; clock_100hz:clock_100hz|counter[5]  ; clock_100hz:clock_100hz|clk_100hz   ; mclk         ; mclk        ; 1.000        ; -0.080     ; 3.578      ;
 ; -2.659 ; clk_200hz:clk_200hz|counter[25]     ; clk_200hz:clk_200hz|clk_200hz       ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.575      ;
 ; -2.655 ; clock_var:clock_var|counter[2]      ; clock_var:clock_var|clk_1mhz        ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.571      ;
-; -2.649 ; clock_100hz:clock_100hz|counter[7]  ; clock_100hz:clock_100hz|clk_100hz   ; mclk         ; mclk        ; 1.000        ; -0.080     ; 3.567      ;
 ; -2.649 ; clock_var:clock_var|counter[3]      ; clock_var:clock_var|clk_1mhz        ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.565      ;
+; -2.649 ; clock_100hz:clock_100hz|counter[7]  ; clock_100hz:clock_100hz|clk_100hz   ; mclk         ; mclk        ; 1.000        ; -0.080     ; 3.567      ;
 ; -2.640 ; clk_200hz:clk_200hz|counter[12]     ; clk_200hz:clk_200hz|clk_200hz       ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.556      ;
 ; -2.639 ; clk_200hz:clk_200hz|counter[14]     ; clk_200hz:clk_200hz|clk_200hz       ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.555      ;
 ; -2.620 ; clk_200hz:clk_200hz|counter[17]     ; clk_200hz:clk_200hz|clk_200hz       ; mclk         ; mclk        ; 1.000        ; -0.082     ; 3.536      ;
@@ -1126,8 +1126,8 @@ No paths to report.
 ; 0.947 ; transmitter:uart_Tx|state.TX_STATE_STOP                                                                                ; transmitter:uart_Tx|Tx                   ; mclk                              ; mclk        ; 0.000        ; 0.080      ; 1.213      ;
 ; 0.948 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|altsyncram_qu01:fifo_ram|q_b[2] ; transmitter:uart_Tx|data[2]              ; clk_200hz:clk_200hz|clk_200hz     ; mclk        ; 0.000        ; 0.065      ; 1.229      ;
 ; 0.950 ; baudrate:uart_baud|tx_acc[6]                                                                                           ; baudrate:uart_baud|tx_acc[8]             ; mclk                              ; mclk        ; 0.000        ; 0.513      ; 1.649      ;
-; 0.957 ; clock_var:clock_var|counter[1]                                                                                         ; clock_var:clock_var|counter[2]           ; mclk                              ; mclk        ; 0.000        ; 0.082      ; 1.225      ;
 ; 0.957 ; clock_100hz:clock_100hz|counter[10]                                                                                    ; clock_100hz:clock_100hz|counter[11]      ; mclk                              ; mclk        ; 0.000        ; 0.081      ; 1.224      ;
+; 0.957 ; clock_var:clock_var|counter[1]                                                                                         ; clock_var:clock_var|counter[2]           ; mclk                              ; mclk        ; 0.000        ; 0.082      ; 1.225      ;
 ; 0.962 ; clock_100hz:clock_100hz|counter[8]                                                                                     ; clock_100hz:clock_100hz|counter[9]       ; mclk                              ; mclk        ; 0.000        ; 0.081      ; 1.229      ;
 ; 0.970 ; clock_100hz:clock_100hz|counter[3]                                                                                     ; clock_100hz:clock_100hz|counter[4]       ; mclk                              ; mclk        ; 0.000        ; 0.081      ; 1.237      ;
 ; 0.972 ; clock_100hz:clock_100hz|counter[2]                                                                                     ; clock_100hz:clock_100hz|counter[3]       ; mclk                              ; mclk        ; 0.000        ; 0.081      ; 1.239      ;
@@ -6934,7 +6934,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sun May 28 19:25:32 2023
+    Info: Processing started: Wed May 31 01:33:41 2023
 Info: Command: quartus_sta servo -c servo
 Info: qsta_default_script.tcl version: #3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -7046,8 +7046,8 @@ Info (332114): Report Metastability: Found 18 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4884 megabytes
-    Info: Processing ended: Sun May 28 19:25:35 2023
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Wed May 31 01:33:44 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

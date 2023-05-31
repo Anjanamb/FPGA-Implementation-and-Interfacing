@@ -1,5 +1,5 @@
 Flow report for servo
-Sun May 28 19:25:39 2023
+Wed May 31 01:33:47 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Sun May 28 19:25:39 2023      ;
+; Flow Status                        ; Successful - Wed May 31 01:33:47 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; servo                                      ;
 ; Top-level Entity Name              ; servo                                      ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/28/2023 19:24:49 ;
+; Start date & time ; 05/31/2023 01:32:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; servo               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 171921336956575.168528208913244 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 171921336956575.168547697706248 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -99,12 +99,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4799 MB             ; 00:00:27                           ;
-; Fitter                    ; 00:00:20     ; 1.6                     ; 5765 MB             ; 00:00:32                           ;
+; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4815 MB             ; 00:00:26                           ;
+; Fitter                    ; 00:00:21     ; 1.6                     ; 5765 MB             ; 00:00:32                           ;
 ; Assembler                 ; 00:00:05     ; 1.0                     ; 4704 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4884 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:43     ; --                      ; --                  ; 00:01:07                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4876 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:42     ; --                      ; --                  ; 00:01:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
