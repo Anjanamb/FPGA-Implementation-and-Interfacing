@@ -26,7 +26,7 @@ module motor4(
 //essential registers
 reg [7:0] data_reg	=	0; //255
 initial begin
-    control = 0; // Assign an initial value to control
+    control = 1000; // Assign an initial value to control
 end
 ////////////////////////////////////////////////////////////
 //Test Control registers ///////////////////////////////////

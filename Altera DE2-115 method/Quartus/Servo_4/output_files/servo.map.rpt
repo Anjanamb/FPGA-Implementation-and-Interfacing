@@ -1,5 +1,5 @@
 Analysis & Synthesis report for servo
-Sun May 28 19:53:42 2023
+Thu Jun 01 21:18:42 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -65,13 +65,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 28 19:53:42 2023      ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 01 21:18:42 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; servo                                      ;
 ; Top-level Entity Name              ; servo                                      ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 633                                        ;
-;     Total combinational functions  ; 559                                        ;
+; Total logic elements               ; 642                                        ;
+;     Total combinational functions  ; 568                                        ;
 ;     Dedicated logic registers      ; 255                                        ;
 ; Total registers                    ; 255                                        ;
 ; Total pins                         ; 40                                         ;
@@ -178,12 +178,11 @@ agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -226,16 +225,16 @@ agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 633        ;
+; Estimated Total logic elements              ; 642        ;
 ;                                             ;            ;
-; Total combinational functions               ; 559        ;
+; Total combinational functions               ; 568        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 179        ;
-;     -- 3 input functions                    ; 124        ;
-;     -- <=2 input functions                  ; 256        ;
+;     -- 4 input functions                    ; 188        ;
+;     -- 3 input functions                    ; 126        ;
+;     -- <=2 input functions                  ; 254        ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 316        ;
+;     -- normal mode                          ; 325        ;
 ;     -- arithmetic mode                      ; 243        ;
 ;                                             ;            ;
 ; Total registers                             ; 255        ;
@@ -249,8 +248,8 @@ agreement for further details.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; mclk~input ;
 ; Maximum fan-out                             ; 84         ;
-; Total fan-out                               ; 2535       ;
-; Average fan-out                             ; 2.81       ;
+; Total fan-out                               ; 2551       ;
+; Average fan-out                             ; 2.80       ;
 +---------------------------------------------+------------+
 
 
@@ -259,7 +258,7 @@ agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                            ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |servo                                                    ; 559 (1)           ; 255 (0)      ; 4096        ; 0            ; 0       ; 0         ; 40   ; 0            ; |servo                                                                                                                                         ; work         ;
+; |servo                                                    ; 568 (1)           ; 255 (0)      ; 4096        ; 0            ; 0       ; 0         ; 40   ; 0            ; |servo                                                                                                                                         ; work         ;
 ;    |FIFO:FIFO|                                            ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 57 (0)            ; 90 (0)       ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_eeg1:auto_generated|                     ; 57 (6)            ; 90 (27)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated                                                  ; work         ;
@@ -278,9 +277,9 @@ agreement for further details.
 ;    |clock_100hz:clock_100hz|                              ; 41 (41)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_100hz:clock_100hz                                                                                                                 ; work         ;
 ;    |clock_var:clock_var|                                  ; 11 (11)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|clock_var:clock_var                                                                                                                     ; work         ;
 ;    |motor1:motor1|                                        ; 123 (123)         ; 44 (44)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor1:motor1                                                                                                                           ; work         ;
-;    |motor2:motor2|                                        ; 55 (55)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor2:motor2                                                                                                                           ; work         ;
-;    |motor3:motor3|                                        ; 52 (52)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor3:motor3                                                                                                                           ; work         ;
-;    |motor4:motor4|                                        ; 52 (52)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor4:motor4                                                                                                                           ; work         ;
+;    |motor2:motor2|                                        ; 54 (54)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor2:motor2                                                                                                                           ; work         ;
+;    |motor3:motor3|                                        ; 57 (57)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor3:motor3                                                                                                                           ; work         ;
+;    |motor4:motor4|                                        ; 57 (57)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|motor4:motor4                                                                                                                           ; work         ;
 ;    |pwm1:pwm1|                                            ; 21 (21)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|pwm1:pwm1                                                                                                                               ; work         ;
 ;    |pwm2:pwm2|                                            ; 21 (21)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|pwm2:pwm2                                                                                                                               ; work         ;
 ;    |pwm3:pwm3|                                            ; 21 (21)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |servo|pwm3:pwm3                                                                                                                               ; work         ;
@@ -389,7 +388,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 255   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 56    ;
+; Number of registers using Synchronous Load   ; 45    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 99    ;
@@ -403,15 +402,26 @@ Encoding Type:  One-Hot
 ; Inverted Register                                                                                                                ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------+---------+
 ; transmitter:uart_Tx|Tx                                                                                                           ; 2       ;
-; motor2:motor2|control[11]                                                                                                        ; 6       ;
-; motor2:motor2|control[7]                                                                                                         ; 6       ;
-; motor2:motor2|control[4]                                                                                                         ; 7       ;
-; motor2:motor2|control[3]                                                                                                         ; 6       ;
+; motor2:motor2|control[9]                                                                                                         ; 5       ;
+; motor2:motor2|control[8]                                                                                                         ; 5       ;
+; motor2:motor2|control[5]                                                                                                         ; 5       ;
+; motor3:motor3|control[7]                                                                                                         ; 6       ;
+; motor3:motor3|control[6]                                                                                                         ; 5       ;
+; motor3:motor3|control[5]                                                                                                         ; 5       ;
+; motor3:motor3|control[4]                                                                                                         ; 7       ;
+; motor3:motor3|control[3]                                                                                                         ; 6       ;
+; motor3:motor3|control[1]                                                                                                         ; 5       ;
+; motor4:motor4|control[9]                                                                                                         ; 5       ;
+; motor4:motor4|control[8]                                                                                                         ; 5       ;
+; motor4:motor4|control[7]                                                                                                         ; 6       ;
+; motor4:motor4|control[6]                                                                                                         ; 5       ;
+; motor4:motor4|control[5]                                                                                                         ; 5       ;
+; motor4:motor4|control[3]                                                                                                         ; 6       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|counter8a0    ; 7       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|cntr_old:cntr_b|counter_reg_bit0          ; 2       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_n5c:wrptr_g1p|parity9       ; 5       ;
 ; FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_eeg1:auto_generated|a_graycounter_qn6:rdptr_g1p|sub_parity6a0 ; 1       ;
-; Total number of inverted registers = 9                                                                                           ;         ;
+; Total number of inverted registers = 20                                                                                          ;         ;
 +----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -422,11 +432,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |servo|motor1:motor1|control[10]      ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |servo|motor1:motor1|data_out[10]     ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |servo|motor2:motor2|control[9]       ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |servo|motor3:motor3|control[6]       ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |servo|motor4:motor4|control[4]       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |servo|motor2:motor2|control[7]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |servo|motor3:motor3|control[8]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |servo|motor4:motor4|control[4]       ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |servo|transmitter:uart_Tx|bit_pos[0] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |servo|motor2:motor2|control[11]      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |servo|motor2:motor2|control[9]       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |servo|motor3:motor3|control[1]       ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |servo|motor4:motor4|control[3]       ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |servo|transmitter:uart_Tx|Selector1  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |servo|transmitter:uart_Tx|Selector2  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
@@ -610,23 +622,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 40                          ;
 ; cycloneiii_ff         ; 255                         ;
-;     ENA               ; 43                          ;
-;     ENA SLD           ; 56                          ;
+;     ENA               ; 54                          ;
+;     ENA SLD           ; 45                          ;
 ;     plain             ; 156                         ;
-; cycloneiii_lcell_comb ; 563                         ;
+; cycloneiii_lcell_comb ; 572                         ;
 ;     arith             ; 243                         ;
 ;         2 data inputs ; 194                         ;
 ;         3 data inputs ; 49                          ;
-;     normal            ; 320                         ;
+;     normal            ; 329                         ;
 ;         0 data inputs ; 7                           ;
 ;         1 data inputs ; 21                          ;
-;         2 data inputs ; 38                          ;
-;         3 data inputs ; 75                          ;
-;         4 data inputs ; 179                         ;
+;         2 data inputs ; 36                          ;
+;         3 data inputs ; 77                          ;
+;         4 data inputs ; 188                         ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.88                        ;
+; Average LUT depth     ; 3.86                        ;
 +-----------------------+-----------------------------+
 
 
@@ -645,7 +657,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sun May 28 19:53:23 2023
+    Info: Processing started: Thu Jun 01 21:18:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off servo -c servo
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Warning (10275): Verilog HDL Module Instantiation warning at servo.v(136): ignored dangling comma in List of Port Connections
@@ -776,16 +788,16 @@ Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/Servo_4/output_files/servo.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 689 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 698 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 641 logic cells
+    Info (21061): Implemented 650 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Sun May 28 19:53:42 2023
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Thu Jun 01 21:18:42 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:45
 
 
 +------------------------------------------+

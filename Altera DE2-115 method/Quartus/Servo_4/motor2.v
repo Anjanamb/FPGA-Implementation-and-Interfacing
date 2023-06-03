@@ -26,7 +26,7 @@ module motor2(
 //essential registers
 reg [7:0] data_reg	=	0; //255
 initial begin
-    control = 'd2200; // Assign an initial value to control
+    control = 'd800; // Assign an initial value to control
 end
 ////////////////////////////////////////////////////////////
 //Test Control registers ///////////////////////////////////
