@@ -4,6 +4,8 @@ module Display(
   input wire Rdreq,
   input wire Wrreq,
   input wire Wr_en,
+  input wire select,
+  output wire clk,
   output wire Fifo_empty,
   output wire Fifo_full,
   output [6:0] out1,
@@ -33,7 +35,8 @@ module Display(
   wire [31:0] lfsr_out;
   wire [63:0] cir_in;
   wire Clk_100hz; 
-
+  wire clk_sel;
+  
   // Assign the input segments
   assign out1_wire = lfsr_out[3:0];   // Bits 3:0 of the input
   assign out2_wire = lfsr_out[7:4];   // Bits 7:4 of the input
@@ -43,7 +46,10 @@ module Display(
   assign out6_wire = lfsr_out[23:20]; // Bits 23:20 of the input
   assign out7_wire = lfsr_out[27:24]; // Bits 27:24 of the input
   assign out8_wire = lfsr_out[31:28]; // Bits 31:28 of the input
-  
+
+  // Multiplexer to select the clock for the second stage
+  assign clk_sel = select ? Clk_100hz : Clk_0_25hz;
+  assign clk = clk_sel; 
 
   // Instantiate the hexadigit modules
   hexadigit1 hexadigit1 (
@@ -88,15 +94,14 @@ module Display(
   
   lfsr lfsr (
 	 .y(lfsr_out),
-	 .clk(Clk_100hz),
+	 .clk(clk_sel),
 	 .clr(clr),
 	 .data_out(cir_in)
   );
   
-  //clock_1hz clock_1hz(
-  //  .clk_50mhz(clk_50),
-  //  .clk_1hz(Clk_100hz),
-  //);
+  clk_0_25hz clk_0_25hz ( .clk_50mhz(clk_50),
+								  .clk_0_25hz(Clk_0_25hz)
+								  );	 
   
   clock_100hz clock_100hz ( .clk_50mhz(clk_50),
 								  .clk_100hz(Clk_100hz)
@@ -109,7 +114,7 @@ module Display(
 								  
   
   FIFO FIFO ( .rdclk(Clk_800hz),
-            .wrclk(Clk_100hz),
+            .wrclk(clk_sel),
 				.data(cir_in),
 				.q(Tx_data),
 				.wrfull(Fifo_full),

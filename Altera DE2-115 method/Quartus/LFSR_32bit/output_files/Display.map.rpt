@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Display
-Sat Jun 03 22:26:37 2023
+Wed Jun 07 03:32:33 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -62,16 +62,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 03 22:26:37 2023      ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 07 03:32:33 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; Display                                    ;
 ; Top-level Entity Name              ; Display                                    ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 444                                        ;
-;     Total combinational functions  ; 342                                        ;
-;     Dedicated logic registers      ; 234                                        ;
-; Total registers                    ; 234                                        ;
-; Total pins                         ; 65                                         ;
+; Total logic elements               ; 494                                        ;
+;     Total combinational functions  ; 392                                        ;
+;     Dedicated logic registers      ; 261                                        ;
+; Total registers                    ; 261                                        ;
+; Total pins                         ; 67                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 16,384                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -175,12 +175,11 @@ agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -204,6 +203,7 @@ agreement for further details.
 ; hexadigit6.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/hexadigit6.v              ;         ;
 ; hexadigit7.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/hexadigit7.v              ;         ;
 ; hexadigit8.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/hexadigit8.v              ;         ;
+; clk_0_25hz.v                     ; yes             ; User Verilog HDL File        ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/clk_0_25hz.v              ;         ;
 ; dcfifo_mixed_widths.tdf          ; yes             ; Megafunction                 ; c:/altera/14.1/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf                                                                     ;         ;
 ; db/dcfifo_qfg1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/db/dcfifo_qfg1.tdf        ;         ;
 ; db/a_graycounter_qn6.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/db/a_graycounter_qn6.tdf  ;         ;
@@ -223,31 +223,31 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 444       ;
+; Estimated Total logic elements              ; 494       ;
 ;                                             ;           ;
-; Total combinational functions               ; 342       ;
+; Total combinational functions               ; 392       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 167       ;
-;     -- 3 input functions                    ; 45        ;
-;     -- <=2 input functions                  ; 130       ;
+;     -- 4 input functions                    ; 176       ;
+;     -- 3 input functions                    ; 47        ;
+;     -- <=2 input functions                  ; 169       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 282       ;
-;     -- arithmetic mode                      ; 60        ;
+;     -- normal mode                          ; 306       ;
+;     -- arithmetic mode                      ; 86        ;
 ;                                             ;           ;
-; Total registers                             ; 234       ;
-;     -- Dedicated logic registers            ; 234       ;
+; Total registers                             ; 261       ;
+;     -- Dedicated logic registers            ; 261       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 65        ;
+; I/O pins                                    ; 67        ;
 ; Total memory bits                           ; 16384     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clr~input ;
 ; Maximum fan-out                             ; 128       ;
-; Total fan-out                               ; 1972      ;
-; Average fan-out                             ; 2.76      ;
+; Total fan-out                               ; 2148      ;
+; Average fan-out                             ; 2.70      ;
 +---------------------------------------------+-----------+
 
 
@@ -256,7 +256,7 @@ agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                              ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Display                                                  ; 342 (1)           ; 234 (0)      ; 16384       ; 0            ; 0       ; 0         ; 65   ; 0            ; |Display                                                                                                                                         ; work         ;
+; |Display                                                  ; 392 (2)           ; 261 (0)      ; 16384       ; 0            ; 0       ; 0         ; 67   ; 0            ; |Display                                                                                                                                         ; work         ;
 ;    |FIFO:FIFO|                                            ; 59 (0)            ; 92 (0)       ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 59 (0)            ; 92 (0)       ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_qfg1:auto_generated|                     ; 59 (6)            ; 92 (27)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qfg1:auto_generated                                                  ; work         ;
@@ -271,8 +271,9 @@ agreement for further details.
 ;             |cmpr_f66:wrfull_eq_comp|                     ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qfg1:auto_generated|cmpr_f66:wrfull_eq_comp                          ; work         ;
 ;             |cntr_qld:cntr_b|                             ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qfg1:auto_generated|cntr_qld:cntr_b                                  ; work         ;
 ;    |baudrate:uart_baud|                                   ; 19 (19)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|baudrate:uart_baud                                                                                                                      ; work         ;
-;    |clk_800hz:clk_800hz|                                  ; 43 (43)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_800hz:clk_800hz                                                                                                                     ; work         ;
-;    |clock_100hz:clock_100hz|                              ; 42 (42)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clock_100hz:clock_100hz                                                                                                                 ; work         ;
+;    |clk_0_25hz:clk_0_25hz|                                ; 50 (50)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_0_25hz:clk_0_25hz                                                                                                                   ; work         ;
+;    |clk_800hz:clk_800hz|                                  ; 42 (42)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_800hz:clk_800hz                                                                                                                     ; work         ;
+;    |clock_100hz:clock_100hz|                              ; 42 (42)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clock_100hz:clock_100hz                                                                                                                 ; work         ;
 ;    |hexadigit1:hexadigit1|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit1:hexadigit1                                                                                                                   ; work         ;
 ;    |hexadigit2:hexadigit2|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit2:hexadigit2                                                                                                                   ; work         ;
 ;    |hexadigit3:hexadigit3|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit3:hexadigit3                                                                                                                   ; work         ;
@@ -318,31 +319,33 @@ Encoding Type:  One-Hot
 +----------------------+---------------------+---------------------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+----------------------------------------+--------------------------------------------+
-; Register name                          ; Reason for Removal                         ;
-+----------------------------------------+--------------------------------------------+
-; lfsr:lfsr|data_out[61..63]             ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[56..60]             ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[54,55]              ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[51..53]             ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[47]                 ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[46]                 ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[39,45]              ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[31,37,38]           ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[29,30]              ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[23]                 ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[22]                 ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[14,15,21]           ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[13]                 ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[5..7]               ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[0]                  ; Stuck at VCC due to stuck port data_in     ;
-; transmitter:uart_Tx|state~5            ; Lost fanout                                ;
-; transmitter:uart_Tx|state~6            ; Lost fanout                                ;
-; clock_100hz:clock_100hz|counter[0]     ; Merged with clk_800hz:clk_800hz|counter[0] ;
-; Total Number of Removed Registers = 35 ;                                            ;
-+----------------------------------------+--------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------+----------------------------------------------+
+; Register name                          ; Reason for Removal                           ;
++----------------------------------------+----------------------------------------------+
+; lfsr:lfsr|data_out[61..63]             ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[56..60]             ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[54,55]              ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[51..53]             ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[47]                 ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[46]                 ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[39,45]              ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[31,37,38]           ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[29,30]              ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[23]                 ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[22]                 ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[14,15,21]           ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[13]                 ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[5..7]               ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[0]                  ; Stuck at VCC due to stuck port data_in       ;
+; transmitter:uart_Tx|state~5            ; Lost fanout                                  ;
+; transmitter:uart_Tx|state~6            ; Lost fanout                                  ;
+; clk_800hz:clk_800hz|counter[0]         ; Merged with clk_0_25hz:clk_0_25hz|counter[0] ;
+; clock_100hz:clock_100hz|counter[0]     ; Merged with clk_0_25hz:clk_0_25hz|counter[0] ;
+; clock_100hz:clock_100hz|counter[1]     ; Merged with clk_0_25hz:clk_0_25hz|counter[1] ;
+; Total Number of Removed Registers = 37 ;                                              ;
++----------------------------------------+----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -350,7 +353,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 234   ;
+; Total registers                              ; 261   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 64    ;
@@ -381,7 +384,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |Display|transmitter:uart_Tx|bit_pos[2] ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Display|transmitter:uart_Tx|Selector1  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Display|transmitter:uart_Tx|Selector3  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |Display|transmitter:uart_Tx|Selector2  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
@@ -535,25 +538,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 65                          ;
-; cycloneiii_ff         ; 234                         ;
+; boundary_port         ; 67                          ;
+; cycloneiii_ff         ; 261                         ;
 ;     CLR               ; 64                          ;
 ;     ENA               ; 39                          ;
-;     plain             ; 131                         ;
-; cycloneiii_lcell_comb ; 353                         ;
-;     arith             ; 60                          ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 293                         ;
+;     plain             ; 158                         ;
+; cycloneiii_lcell_comb ; 403                         ;
+;     arith             ; 86                          ;
+;         2 data inputs ; 84                          ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 317                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 18                          ;
-;         2 data inputs ; 62                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 167                         ;
+;         1 data inputs ; 19                          ;
+;         2 data inputs ; 75                          ;
+;         3 data inputs ; 45                          ;
+;         4 data inputs ; 176                         ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.43                        ;
+; Average LUT depth     ; 2.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -572,10 +575,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Sat Jun 03 22:26:25 2023
+    Info: Processing started: Wed Jun 07 03:32:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Display -c Display
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Warning (10275): Verilog HDL Module Instantiation warning at Display.v(119): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at Display.v(124): ignored dangling comma in List of Port Connections
 Info (12021): Found 1 design units, including 1 entities, in source file display.v
     Info (12023): Found entity 1: Display
 Info (12021): Found 1 design units, including 1 entities, in source file hexadigit1.v
@@ -610,7 +613,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file hexadig
     Info (12023): Found entity 1: hexadigit7
 Info (12021): Found 1 design units, including 1 entities, in source file hexadigit8.v
     Info (12023): Found entity 1: hexadigit8
-Warning (10236): Verilog HDL Implicit Net warning at Display.v(107): created implicit net for "Clk_800hz"
+Info (12021): Found 1 design units, including 1 entities, in source file clk_0_25hz.v
+    Info (12023): Found entity 1: clk_0_25hz
+Warning (10236): Verilog HDL Implicit Net warning at Display.v(103): created implicit net for "Clk_0_25hz"
+Warning (10236): Verilog HDL Implicit Net warning at Display.v(112): created implicit net for "Clk_800hz"
 Info (12127): Elaborating entity "Display" for the top level hierarchy
 Info (12128): Elaborating entity "hexadigit1" for hierarchy "hexadigit1:hexadigit1"
 Info (12128): Elaborating entity "hexadigit2" for hierarchy "hexadigit2:hexadigit2"
@@ -621,6 +627,8 @@ Info (12128): Elaborating entity "hexadigit6" for hierarchy "hexadigit6:hexadigi
 Info (12128): Elaborating entity "hexadigit7" for hierarchy "hexadigit7:hexadigit7"
 Info (12128): Elaborating entity "hexadigit8" for hierarchy "hexadigit8:hexadigit8"
 Info (12128): Elaborating entity "lfsr" for hierarchy "lfsr:lfsr"
+Info (12128): Elaborating entity "clk_0_25hz" for hierarchy "clk_0_25hz:clk_0_25hz"
+Warning (10230): Verilog HDL assignment warning at clk_0_25hz.v(14): truncated value with size 32 to match size of target (28)
 Info (12128): Elaborating entity "clock_100hz" for hierarchy "clock_100hz:clock_100hz"
 Warning (10230): Verilog HDL assignment warning at clock_100hz.v(14): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "clk_800hz" for hierarchy "clk_800hz:clk_800hz"
@@ -674,6 +682,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12128): Elaborating entity "cntr_qld" for hierarchy "FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_qfg1:auto_generated|cntr_qld:cntr_b"
 Info (12128): Elaborating entity "baudrate" for hierarchy "baudrate:uart_baud"
 Info (12128): Elaborating entity "transmitter" for hierarchy "transmitter:uart_Tx"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer clk_sel
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
@@ -714,16 +724,16 @@ Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_32bit/output_files/Display.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 517 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 444 logic cells
+Info (21057): Implemented 569 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 61 output pins
+    Info (21061): Implemented 494 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Sat Jun 03 22:26:37 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Wed Jun 07 03:32:33 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+

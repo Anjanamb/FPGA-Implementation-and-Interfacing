@@ -1,7 +1,7 @@
 import serial
 
 # open the serial port at the appropriate baud rate and settings
-ser = serial.Serial('COM5 ', baudrate = 115200, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS, timeout=0.001)
+ser = serial.Serial('COM6 ', baudrate = 115200, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS, timeout=0.001)
 
 # Open file for writing
 with open('received_data.txt', 'w') as f:
