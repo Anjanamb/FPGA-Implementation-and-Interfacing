@@ -1,9 +1,11 @@
 |Display
-clk_50 => clk_50.IN4
+clk_50 => clk_50.IN5
 clr => clr.IN1
 Rdreq => Rdreq.IN1
 Wrreq => Wrreq.IN1
 Wr_en => Wr_en.IN1
+select => clk_sel.OUTPUTSELECT
+clk <= clk_sel.DB_MAX_OUTPUT_PORT_TYPE
 Fifo_empty <= FIFO:FIFO.rdempty
 Fifo_full <= FIFO:FIFO.wrfull
 out1[0] <= hexadigit1:hexadigit1.out
@@ -241,8 +243,8 @@ data_out[30] <= data_out[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_out[31] <= data_out[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Display|clk_0_125hz:clk_0_125hz
-clk_50mhz => clk_0_125hz~reg0.CLK
+|Display|clk_0_25hz:clk_0_25hz
+clk_50mhz => clk_0_25hz~reg0.CLK
 clk_50mhz => counter[0].CLK
 clk_50mhz => counter[1].CLK
 clk_50mhz => counter[2].CLK
@@ -270,7 +272,39 @@ clk_50mhz => counter[23].CLK
 clk_50mhz => counter[24].CLK
 clk_50mhz => counter[25].CLK
 clk_50mhz => counter[26].CLK
-clk_0_125hz <= clk_0_125hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_50mhz => counter[27].CLK
+clk_0_25hz <= clk_0_25hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Display|clock_100hz:clock_100hz
+clk_50mhz => clk_100hz~reg0.CLK
+clk_50mhz => counter[0].CLK
+clk_50mhz => counter[1].CLK
+clk_50mhz => counter[2].CLK
+clk_50mhz => counter[3].CLK
+clk_50mhz => counter[4].CLK
+clk_50mhz => counter[5].CLK
+clk_50mhz => counter[6].CLK
+clk_50mhz => counter[7].CLK
+clk_50mhz => counter[8].CLK
+clk_50mhz => counter[9].CLK
+clk_50mhz => counter[10].CLK
+clk_50mhz => counter[11].CLK
+clk_50mhz => counter[12].CLK
+clk_50mhz => counter[13].CLK
+clk_50mhz => counter[14].CLK
+clk_50mhz => counter[15].CLK
+clk_50mhz => counter[16].CLK
+clk_50mhz => counter[17].CLK
+clk_50mhz => counter[18].CLK
+clk_50mhz => counter[19].CLK
+clk_50mhz => counter[20].CLK
+clk_50mhz => counter[21].CLK
+clk_50mhz => counter[22].CLK
+clk_50mhz => counter[23].CLK
+clk_50mhz => counter[24].CLK
+clk_50mhz => counter[25].CLK
+clk_100hz <= clk_100hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Display|clk_400hz:clk_400hz

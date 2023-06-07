@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Display
-Wed May 31 18:20:56 2023
+Tue Jun 06 15:52:34 2023
 Quartus II 64-Bit Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
 
 
@@ -62,16 +62,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 31 18:20:56 2023      ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 06 15:52:34 2023      ;
 ; Quartus II 64-Bit Version          ; 14.1.0 Build 186 12/03/2014 SJ Web Edition ;
 ; Revision Name                      ; Display                                    ;
 ; Top-level Entity Name              ; Display                                    ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 369                                        ;
-;     Total combinational functions  ; 285                                        ;
-;     Dedicated logic registers      ; 210                                        ;
-; Total registers                    ; 210                                        ;
-; Total pins                         ; 37                                         ;
+; Total logic elements               ; 411                                        ;
+;     Total combinational functions  ; 327                                        ;
+;     Dedicated logic registers      ; 236                                        ;
+; Total registers                    ; 236                                        ;
+; Total pins                         ; 39                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 16,384                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -184,67 +184,68 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                  ;
-+----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                         ; File Name with Absolute Path                                                                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; Display.v                        ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/Display.v                 ;         ;
-; hexadigit1.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/hexadigit1.v              ;         ;
-; hexadigit2.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/hexadigit2.v              ;         ;
-; hexadigit3.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/hexadigit3.v              ;         ;
-; hexadigit4.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/hexadigit4.v              ;         ;
-; lfsr.v                           ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/lfsr.v                    ;         ;
-; baudrate.v                       ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/baudrate.v                ;         ;
-; transmitter.v                    ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/transmitter.v             ;         ;
-; clk_400hz.v                      ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/clk_400hz.v               ;         ;
-; clk_0_125hz.v                    ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/clk_0_125hz.v             ;         ;
-; fifo.v                           ; yes             ; Auto-Found Wizard-Generated File  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/fifo.v                    ;         ;
-; dcfifo_mixed_widths.tdf          ; yes             ; Megafunction                      ; c:/altera/14.1/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf                                                                               ;         ;
-; db/dcfifo_hfg1.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/dcfifo_hfg1.tdf        ;         ;
-; db/a_graycounter_2p6.tdf         ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/a_graycounter_2p6.tdf  ;         ;
-; db/a_graycounter_v6c.tdf         ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/a_graycounter_v6c.tdf  ;         ;
-; db/altsyncram_2011.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/altsyncram_2011.tdf    ;         ;
-; db/alt_synch_pipe_b7d.tdf        ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/alt_synch_pipe_b7d.tdf ;         ;
-; db/dffpipe_a09.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/dffpipe_a09.tdf        ;         ;
-; db/alt_synch_pipe_c7d.tdf        ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/alt_synch_pipe_c7d.tdf ;         ;
-; db/dffpipe_b09.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/dffpipe_b09.tdf        ;         ;
-; db/cmpr_n76.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/cmpr_n76.tdf           ;         ;
-; db/cntr_pld.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/db/cntr_pld.tdf           ;         ;
-+----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                        ;
++----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                         ; File Name with Absolute Path                                                                                                                               ; Library ;
++----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Display.v                        ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/Display.v                 ;         ;
+; hexadigit1.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/hexadigit1.v              ;         ;
+; hexadigit2.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/hexadigit2.v              ;         ;
+; hexadigit3.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/hexadigit3.v              ;         ;
+; hexadigit4.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/hexadigit4.v              ;         ;
+; lfsr.v                           ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/lfsr.v                    ;         ;
+; baudrate.v                       ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/baudrate.v                ;         ;
+; transmitter.v                    ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/transmitter.v             ;         ;
+; clock_100hz.v                    ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/clock_100hz.v             ;         ;
+; clk_400hz.v                      ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/clk_400hz.v               ;         ;
+; clk_0_25hz.v                     ; yes             ; User Verilog HDL File             ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/clk_0_25hz.v              ;         ;
+; fifo.v                           ; yes             ; Auto-Found Wizard-Generated File  ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/fifo.v                    ;         ;
+; dcfifo_mixed_widths.tdf          ; yes             ; Megafunction                      ; c:/altera/14.1/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf                                                                                     ;         ;
+; db/dcfifo_hfg1.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/dcfifo_hfg1.tdf        ;         ;
+; db/a_graycounter_2p6.tdf         ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/a_graycounter_2p6.tdf  ;         ;
+; db/a_graycounter_v6c.tdf         ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/a_graycounter_v6c.tdf  ;         ;
+; db/altsyncram_2011.tdf           ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/altsyncram_2011.tdf    ;         ;
+; db/alt_synch_pipe_b7d.tdf        ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/alt_synch_pipe_b7d.tdf ;         ;
+; db/dffpipe_a09.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/dffpipe_a09.tdf        ;         ;
+; db/alt_synch_pipe_c7d.tdf        ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/alt_synch_pipe_c7d.tdf ;         ;
+; db/dffpipe_b09.tdf               ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/dffpipe_b09.tdf        ;         ;
+; db/cmpr_n76.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/cmpr_n76.tdf           ;         ;
+; db/cntr_pld.tdf                  ; yes             ; Auto-Generated Megafunction       ; C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/db/cntr_pld.tdf           ;         ;
++----------------------------------+-----------------+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                       ;
-+---------------------------------------------+-------------------------------------+
-; Resource                                    ; Usage                               ;
-+---------------------------------------------+-------------------------------------+
-; Estimated Total logic elements              ; 369                                 ;
-;                                             ;                                     ;
-; Total combinational functions               ; 285                                 ;
-; Logic element usage by number of LUT inputs ;                                     ;
-;     -- 4 input functions                    ; 120                                 ;
-;     -- 3 input functions                    ; 39                                  ;
-;     -- <=2 input functions                  ; 126                                 ;
-;                                             ;                                     ;
-; Logic elements by mode                      ;                                     ;
-;     -- normal mode                          ; 225                                 ;
-;     -- arithmetic mode                      ; 60                                  ;
-;                                             ;                                     ;
-; Total registers                             ; 210                                 ;
-;     -- Dedicated logic registers            ; 210                                 ;
-;     -- I/O registers                        ; 0                                   ;
-;                                             ;                                     ;
-; I/O pins                                    ; 37                                  ;
-; Total memory bits                           ; 16384                               ;
-;                                             ;                                     ;
-; Embedded Multiplier 9-bit elements          ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; clk_0_125hz:clk_0_125hz|clk_0_125hz ;
-; Maximum fan-out                             ; 95                                  ;
-; Total fan-out                               ; 1606                                ;
-; Average fan-out                             ; 2.78                                ;
-+---------------------------------------------+-------------------------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 411          ;
+;                                             ;              ;
+; Total combinational functions               ; 327          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 128          ;
+;     -- 3 input functions                    ; 40           ;
+;     -- <=2 input functions                  ; 159          ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 242          ;
+;     -- arithmetic mode                      ; 85           ;
+;                                             ;              ;
+; Total registers                             ; 236          ;
+;     -- Dedicated logic registers            ; 236          ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 39           ;
+; Total memory bits                           ; 16384        ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; clk_50~input ;
+; Maximum fan-out                             ; 104          ;
+; Total fan-out                               ; 1761         ;
+; Average fan-out                             ; 2.71         ;
++---------------------------------------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -252,7 +253,7 @@ agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                              ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Display                                                  ; 285 (1)           ; 210 (0)      ; 16384       ; 0            ; 0       ; 0         ; 37   ; 0            ; |Display                                                                                                                                         ; work         ;
+; |Display                                                  ; 327 (2)           ; 236 (0)      ; 16384       ; 0            ; 0       ; 0         ; 39   ; 0            ; |Display                                                                                                                                         ; work         ;
 ;    |FIFO:FIFO|                                            ; 64 (0)            ; 100 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 64 (0)            ; 100 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_hfg1:auto_generated|                     ; 64 (6)            ; 100 (30)     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hfg1:auto_generated                                                  ; work         ;
@@ -267,8 +268,9 @@ agreement for further details.
 ;             |cmpr_n76:wrfull_eq_comp|                     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hfg1:auto_generated|cmpr_n76:wrfull_eq_comp                          ; work         ;
 ;             |cntr_pld:cntr_b|                             ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hfg1:auto_generated|cntr_pld:cntr_b                                  ; work         ;
 ;    |baudrate:uart_baud|                                   ; 19 (19)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|baudrate:uart_baud                                                                                                                      ; work         ;
-;    |clk_0_125hz:clk_0_125hz|                              ; 49 (49)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_0_125hz:clk_0_125hz                                                                                                                 ; work         ;
-;    |clk_400hz:clk_400hz|                                  ; 43 (43)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_400hz:clk_400hz                                                                                                                     ; work         ;
+;    |clk_0_25hz:clk_0_25hz|                                ; 51 (51)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_0_25hz:clk_0_25hz                                                                                                                   ; work         ;
+;    |clk_400hz:clk_400hz|                                  ; 41 (41)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clk_400hz:clk_400hz                                                                                                                     ; work         ;
+;    |clock_100hz:clock_100hz|                              ; 41 (41)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|clock_100hz:clock_100hz                                                                                                                 ; work         ;
 ;    |hexadigit1:hexadigit1|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit1:hexadigit1                                                                                                                   ; work         ;
 ;    |hexadigit2:hexadigit2|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit2:hexadigit2                                                                                                                   ; work         ;
 ;    |hexadigit3:hexadigit3|                                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Display|hexadigit3:hexadigit3                                                                                                                   ; work         ;
@@ -301,25 +303,27 @@ Encoding Type:  One-Hot
 +----------------------+---------------------+---------------------+----------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+----------------------------------------+--------------------------------------------+
-; Register name                          ; Reason for Removal                         ;
-+----------------------------------------+--------------------------------------------+
-; lfsr:lfsr|data_out[31]                 ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[29,30]              ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[23,26..28]          ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[22]                 ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[14,15,21]           ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[13]                 ; Stuck at VCC due to stuck port data_in     ;
-; lfsr:lfsr|data_out[5..7]               ; Stuck at GND due to stuck port data_in     ;
-; lfsr:lfsr|data_out[0]                  ; Stuck at VCC due to stuck port data_in     ;
-; transmitter:uart_Tx|state~5            ; Lost fanout                                ;
-; transmitter:uart_Tx|state~6            ; Lost fanout                                ;
-; clk_0_125hz:clk_0_125hz|counter[0]     ; Merged with clk_400hz:clk_400hz|counter[0] ;
-; clk_0_125hz:clk_0_125hz|counter[1]     ; Merged with clk_400hz:clk_400hz|counter[1] ;
-; Total Number of Removed Registers = 20 ;                                            ;
-+----------------------------------------+--------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------+----------------------------------------------+
+; Register name                          ; Reason for Removal                           ;
++----------------------------------------+----------------------------------------------+
+; lfsr:lfsr|data_out[31]                 ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[29,30]              ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[23,26..28]          ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[22]                 ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[14,15,21]           ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[13]                 ; Stuck at VCC due to stuck port data_in       ;
+; lfsr:lfsr|data_out[5..7]               ; Stuck at GND due to stuck port data_in       ;
+; lfsr:lfsr|data_out[0]                  ; Stuck at VCC due to stuck port data_in       ;
+; transmitter:uart_Tx|state~5            ; Lost fanout                                  ;
+; transmitter:uart_Tx|state~6            ; Lost fanout                                  ;
+; clk_400hz:clk_400hz|counter[0]         ; Merged with clk_0_25hz:clk_0_25hz|counter[0] ;
+; clock_100hz:clock_100hz|counter[0]     ; Merged with clk_0_25hz:clk_0_25hz|counter[0] ;
+; clk_400hz:clk_400hz|counter[1]         ; Merged with clk_0_25hz:clk_0_25hz|counter[1] ;
+; clock_100hz:clock_100hz|counter[1]     ; Merged with clk_0_25hz:clk_0_25hz|counter[1] ;
+; Total Number of Removed Registers = 22 ;                                              ;
++----------------------------------------+----------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -327,7 +331,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 210   ;
+; Total registers                              ; 236   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
@@ -528,25 +532,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 37                          ;
-; cycloneiii_ff         ; 210                         ;
+; boundary_port         ; 39                          ;
+; cycloneiii_ff         ; 236                         ;
 ;     CLR               ; 32                          ;
 ;     ENA               ; 40                          ;
-;     plain             ; 138                         ;
-; cycloneiii_lcell_comb ; 292                         ;
-;     arith             ; 60                          ;
-;         2 data inputs ; 59                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 232                         ;
+;     plain             ; 164                         ;
+; cycloneiii_lcell_comb ; 334                         ;
+;     arith             ; 85                          ;
+;         2 data inputs ; 83                          ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 249                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 21                          ;
-;         2 data inputs ; 51                          ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 59                          ;
 ;         3 data inputs ; 38                          ;
-;         4 data inputs ; 120                         ;
+;         4 data inputs ; 128                         ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.88                        ;
+; Average LUT depth     ; 2.95                        ;
 +-----------------------+-----------------------------+
 
 
@@ -565,12 +569,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
-    Info: Processing started: Wed May 31 18:20:44 2023
+    Info: Processing started: Tue Jun 06 15:52:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Display -c Display
 Warning (125092): Tcl Script File FIFO.qip not found
     Info (125063): set_global_assignment -name QIP_FILE FIFO.qip
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Warning (10275): Verilog HDL Module Instantiation warning at Display.v(85): ignored dangling comma in List of Port Connections
+Warning (10275): Verilog HDL Module Instantiation warning at Display.v(89): ignored dangling comma in List of Port Connections
 Info (12021): Found 1 design units, including 1 entities, in source file display.v
     Info (12023): Found entity 1: Display
 Info (12021): Found 1 design units, including 1 entities, in source file hexadigit1.v
@@ -597,17 +601,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file clk_0_5
     Info (12023): Found entity 1: clk_0_5hz
 Info (12021): Found 1 design units, including 1 entities, in source file clk_0_125hz.v
     Info (12023): Found entity 1: clk_0_125hz
-Warning (10236): Verilog HDL Implicit Net warning at Display.v(57): created implicit net for "Clk_0_125hz"
-Warning (10236): Verilog HDL Implicit Net warning at Display.v(73): created implicit net for "Clk_400hz"
+Info (12021): Found 1 design units, including 1 entities, in source file clk_0_25hz.v
+    Info (12023): Found entity 1: clk_0_25hz
+Warning (10236): Verilog HDL Implicit Net warning at Display.v(70): created implicit net for "Clk_0_25hz"
+Warning (10236): Verilog HDL Implicit Net warning at Display.v(78): created implicit net for "Clk_400hz"
 Info (12127): Elaborating entity "Display" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Display.v(19): object "out1_wire" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Display.v(21): object "out1_wire" assigned a value but never read
 Info (12128): Elaborating entity "hexadigit1" for hierarchy "hexadigit1:hexadigit1"
 Info (12128): Elaborating entity "hexadigit2" for hierarchy "hexadigit2:hexadigit2"
 Info (12128): Elaborating entity "hexadigit3" for hierarchy "hexadigit3:hexadigit3"
 Info (12128): Elaborating entity "hexadigit4" for hierarchy "hexadigit4:hexadigit4"
 Info (12128): Elaborating entity "lfsr" for hierarchy "lfsr:lfsr"
-Info (12128): Elaborating entity "clk_0_125hz" for hierarchy "clk_0_125hz:clk_0_125hz"
-Warning (10230): Verilog HDL assignment warning at clk_0_125hz.v(14): truncated value with size 32 to match size of target (27)
+Info (12128): Elaborating entity "clk_0_25hz" for hierarchy "clk_0_25hz:clk_0_25hz"
+Warning (10230): Verilog HDL assignment warning at clk_0_25hz.v(14): truncated value with size 32 to match size of target (28)
+Info (12128): Elaborating entity "clock_100hz" for hierarchy "clock_100hz:clock_100hz"
+Warning (10230): Verilog HDL assignment warning at clock_100hz.v(14): truncated value with size 32 to match size of target (26)
 Info (12128): Elaborating entity "clk_400hz" for hierarchy "clk_400hz:clk_400hz"
 Warning (10230): Verilog HDL assignment warning at clk_400hz.v(14): truncated value with size 32 to match size of target (26)
 Warning (12125): Using design file fifo.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -661,6 +669,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12128): Elaborating entity "cntr_pld" for hierarchy "FIFO:FIFO|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_hfg1:auto_generated|cntr_pld:cntr_b"
 Info (12128): Elaborating entity "baudrate" for hierarchy "baudrate:uart_baud"
 Info (12128): Elaborating entity "transmitter" for hierarchy "transmitter:uart_Tx"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer clk_sel
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -683,24 +693,24 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
     Warning (13310): Register "lfsr:lfsr|data_out[20]" is converted into an equivalent circuit using register "lfsr:lfsr|data_out[20]~_emulated" and latch "lfsr:lfsr|data_out[20]~61"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/output_files/Display.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/output_files/Display.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 415 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 370 logic cells
+Info (21057): Implemented 459 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 412 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Wed May 31 18:20:56 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Processing ended: Tue Jun 06 15:52:34 2023
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:47
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR/LFSR_16bit_test/output_files/Display.map.smsg.
+The suppressed messages can be found in C:/Users/Anjana/Desktop/Github_FPGA/FPGA-Implementation-and-interfacing/Altera DE2-115 method/Quartus/LFSR_16bit/LFSR_16bit_test/output_files/Display.map.smsg.
 
 

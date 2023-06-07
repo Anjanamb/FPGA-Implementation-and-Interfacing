@@ -89,7 +89,7 @@ set_location_assignment PIN_AF23 -to out4[5]
 set_location_assignment PIN_Y19 -to out4[6]
 set_global_assignment -name VERILOG_FILE lfsr.v
 set_location_assignment PIN_Y2 -to clk_50
-set_location_assignment PIN_AB28 -to clr
+set_location_assignment PIN_AB22 -to clr
 set_global_assignment -name VERILOG_FILE clock_1hz.v
 set_global_assignment -name QIP_FILE FIFO.qip
 set_global_assignment -name VERILOG_FILE baudrate.v
