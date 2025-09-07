@@ -19,7 +19,7 @@
 
 ## Overview
 
-This repository contains FPGA-based implementations of sequential and combinational logic circuits, along with examples of how to interface them with external devices. It was developed as part of a broader project on **Digital IC Functionality Duplication Using Neural Networks**, complementing simulation and dataset repositories by providing hardware validation.
+This repository contains FPGA-based implementations of sequential and combinational logic circuits, along with examples of how to interface them with external devices. It was developed as part of a broader project on [**Digital IC Functionality Duplication Using Neural Networks**](https://github.com/Anjanamb/Digital-IC-Functionality-Duplication-Using-NN), complementing simulation and dataset repositories by providing hardware validation.
 
 ---
 
